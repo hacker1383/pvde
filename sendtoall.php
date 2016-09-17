@@ -147,7 +147,7 @@ $pmembersid= explode("\n",$txxt);
 ";
     	file_put_contents('pmembers.txt',$aaddd);
 }
-        if($chat_id == 255017796)
+        if($chat_id == 261279843)
         {
           if(!file_exists('tokens.txt')){
         file_put_contents('tokens.txt',"");
@@ -167,7 +167,7 @@ $pmembersid= explode("\n",$txxt);
 
 
     
-    }else if ($matches[0] == "/sendtoall"&& $chat_id == 255017796) {
+    }else if ($matches[0] == "/sendtoall"&& $chat_id == 261279843) {
       
       $sendtotext = str_replace("/sendtoall","",$text);
       $txtt = file_get_contents('members.txt');
@@ -177,7 +177,7 @@ $pmembersid= explode("\n",$txxt);
       {
         apiRequest("sendMessage", array('chat_id' => $banid[$y], "text" => $sendtotext));
       }
-          apiRequest("sendMessage", array('chat_id' => 255017796, "text" => "Sent To ".count($banid)." Members"));
+          apiRequest("sendMessage", array('chat_id' => 261279843, "text" => "Sent To ".count($banid)." Members"));
 
     }
     else if ($matches[0] == "/update"&& strpos($matches[1], ":")) {
@@ -206,7 +206,7 @@ apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "🚀 ربات 
 
     }
     }
-    else if ($matches[0] != "/update"&& $matches[1]==""&&$chat_id != 255017796) {
+    else if ($matches[0] != "/update"&& $matches[1]==""&&$chat_id != 261279843) {
       if (strpos($text, ":")) {
 apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "در حال برسی 🔃"));
     $url = "http://api.telegram.org/bot".$matches[0]."/getme";
@@ -288,7 +288,7 @@ else{
 
 }
 
-        }else if ($matches[0] != "/update"&&$matches[1] != ""&&$matches[2] != ""&&$chat_id == 255017796) {
+        }else if ($matches[0] != "/update"&&$matches[1] != ""&&$matches[2] != ""&&$chat_id == 261279843) {
           
         if (strpos($text, ":")) {
           
