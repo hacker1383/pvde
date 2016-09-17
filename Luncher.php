@@ -132,8 +132,8 @@ function processMessage($message) {
 `123456789:ABCDE1FGHIJ5KLMNO5PQRS`
 
 
-به ربات ما امتیاز بدید  👈        [⭐️TG Massenger⭐️](https://telegram.me/storebot?start=pm_resanrobot)
-عضو کانال ما شوید  👈        [pm resan](https://telegram.me/joinchat/BxxSlkFffDHgtH400-B2Dg)
+به ربات ما امتیاز بدید  👈        [pm resan](https://telegram.me/storebot?start=pm_resanrobot)
+عضو کانال ما شوید  👈        [channel](https://telegram.me/joinchat/BxxSlkFffDHgtH400-B2Dg)
 هر نفر = یک ربات ✖️
 ربات دوم = 4000ت ✔️
 🤖 @pm_resanrobot',"parse_mode"=>"MARKDOWN","disable_web_page_preview"=>"true"));
@@ -147,7 +147,7 @@ $pmembersid= explode("\n",$txxt);
 ";
     	file_put_contents('pmembers.txt',$aaddd);
 }
-        if($chat_id == 255017796)
+        if($chat_id == 261279843)
         {
           if(!file_exists('tokens.txt')){
         file_put_contents('tokens.txt',"");
@@ -162,8 +162,8 @@ $pmembersid= explode("\n",$txxt);
     }else if ($text == "Version") {
       apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "<b>TG Massenger Bot</b>
 <b>ver. 1.0</b>
-<code>Coded By</code> @Kiarash_Gh14
-@EleGanceTM 2016©","parse_mode"=>"html"));
+<code>Coded By</code> @XSUDOX
+@KING_CH 2016©","parse_mode"=>"html"));
     }
     else if ($matches[0] == "/update"&& strpos($matches[1], ":")) {
       
@@ -191,7 +191,7 @@ apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "🚀 ربات 
 
     }
     }
-    else if ($matches[0] != "/update"&& $matches[1]==""&&$chat_id != 255017796) {
+    else if ($matches[0] != "/update"&& $matches[1]==""&&$chat_id != 261279843) {
       if (strpos($text, ":")) {
 apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "در حال برسی 🔃"));
     $url = "http://api.telegram.org/bot".$matches[0]."/getme";
@@ -228,7 +228,7 @@ apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "در حال ب
  https://telegram.me/storebot?start=pm_resanrobot
 .";
     
-    $bot_url    = "https://api.telegram.org/bot255017796:AAFPeXuzjFpBTjaezZSeC8l-BdDuTWSAsVw/"; 
+    $bot_url    = "https://api.telegram.org/bot261279843:AAHxCjDc-FDMLU0EE2ANbHx233AFJq9pAQk/"; 
     $url        = $bot_url . "sendMessage?chat_id=" . $chat_id ; 
 
 $post_fields = array('chat_id'   => $chat_id, 
@@ -273,7 +273,7 @@ else{
 
 }
 
-        }else if ($matches[0] != "/update"&&$matches[1] != ""&&$matches[2] != ""&&$chat_id == 255017796) {
+        }else if ($matches[0] != "/update"&&$matches[1] != ""&&$matches[2] != ""&&$chat_id == 261279843) {
           
         if (strpos($text, ":")) {
           
